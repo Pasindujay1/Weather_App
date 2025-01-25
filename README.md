@@ -193,7 +193,19 @@ cd WeatherApp
 npm install
 ```
 
-### 3. Start the Expo development server
+### 3. Configure environment variables
+Create a `.env` file in the `WeatherApp-backend` directory and add the following:
+```
+API_KEY=e6a232397601d9345cd0bbef5583ab70
+BASE_URL=https://api.openweathermap.org/data/2.5
+GEO_URL=http://api.openweathermap.org/geo/1.0/reverse
+TILE_URL=https://tile.openweathermap.org/map
+API_URL=http://192.168.1.8:8000/api/auth
+
+
+```
+
+### 4. Start the Expo development server
 ```bash
 npm run android
 ```
