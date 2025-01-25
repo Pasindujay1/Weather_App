@@ -12,6 +12,7 @@ Welcome to the Weather Display Application for Lucenxia Healthcare (Pvt) Ltd. Th
 - [Trade-offs and Considerations](#trade-offs-and-considerations)
 - [Conclusion](#conclusion)
 - [API Documentation](#API-Documentation)
+- [Weather App Functionality Demonstration Video](#APP-Demostartion-Video)
 - [Setup Instructions](#setup-instructions)
 
 ## Objective
@@ -129,6 +130,10 @@ The chosen technologies and architectural patterns provide a scalable and effici
 ## API-Documentation
 
 For detailed API documentation, please refer to the [POSTMAN API Documentation](https://documenter.getpostman.com/view/25319657/2sAYQfEpM7).
+
+## #APP-Demostartion-Video
+
+Access the weather app functionality demonstration video with this link [Weather App Video](https://drive.google.com/file/d/1synw7WWvN18lfYerWeuf-9z2Q2wUg57B/view)
 
 
 ## Setup Instructions
