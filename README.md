@@ -126,7 +126,7 @@ The chosen technologies and architectural patterns provide a scalable and effici
 
 ### Installation
 
-1. **Clone the repository**:
+<!-- 1. **Clone the repository**:
    ```sh
    git clone <repository-url>
    cd <repository-directory>
@@ -154,4 +154,63 @@ npm start
 cd ../WeatherApp
 expo start
 
-3.Open the Expo app on your mobile device and scan the QR code to run the application.
+3.Open the Expo app on your mobile device and scan the QR code to run the application. -->
+
+## Prerequisites
+Ensure you have the following installed:
+- **Node.js** (v16+)
+- **npm** or **yarn**
+- **Expo CLI**
+
+---
+
+## Backend Setup
+
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd backend
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+Create a `.env` file in the `backend` directory and add the following:
+```
+PORT=5000
+MONGO_URI=<your-mongodb-connection-string>
+JWT_SECRET=<your-jwt-secret>
+OPENWEATHER_API_KEY=<your-openweather-api-key>
+```
+
+### 4. Start the server
+```bash
+npm start
+```
+The server will run on `http://localhost:5000` by default.
+
+---
+
+## Frontend Setup
+
+### 1. Navigate to the frontend folder
+```bash
+cd frontend
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Start the Expo development server
+```bash
+expo start
+```
+
+Scan the QR code with your Expo Go app to view the application on your device.
+
+---
