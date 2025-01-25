@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { API_KEY, BASE_URL, GEO_URL, TILE_URL } from '@env';
+import { API_KEY, BASE_URL, GEO_URL } from '@env';
 
 export const getWeatherByLocation = async (lat, lon) => {
     try {

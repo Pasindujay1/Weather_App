@@ -11,6 +11,7 @@ Welcome to the Weather Display Application for Lucenxia Healthcare (Pvt) Ltd. Th
 - [Architectural Patterns](#architectural-patterns)
 - [Trade-offs and Considerations](#trade-offs-and-considerations)
 - [Conclusion](#conclusion)
+- [API Documentation](#API-Documentation)
 - [Setup Instructions](#setup-instructions)
 
 ## Objective
@@ -96,6 +97,15 @@ The purpose of this assignment is to assess skills and experience in front-end a
 - **Reason**: React Native's component-based architecture promotes reusability and separation of concerns. Each screen and UI element is encapsulated in its own component, making the codebase modular and easier to maintain.
 - **Trade-offs**: Component-based architecture can lead to a large number of small files, but it improves code organization and readability.
 
+### MVC Pattern
+
+- **Reason**: Backend follows the Model-View-Controller pattern to separate concerns and improve maintainability.
+
+
+## Middleware for Authentication
+- **Reason**: Centralized logic for reusable authentication processes.
+
+
 ### RESTful API Design
 
 - **Reason**: RESTful APIs are stateless and provide a clear structure for interacting with backend services. They are easy to consume from the frontend and integrate well with HTTP methods.
@@ -116,6 +126,11 @@ The purpose of this assignment is to assess skills and experience in front-end a
 
 The chosen technologies and architectural patterns provide a scalable and efficient solution for the Weather Display Application. The design decisions prioritize rapid development, cross-platform compatibility, and a consistent user experience. The trade-offs made are justified by the benefits they bring to the overall system. The use of environment variables through a `.env` file ensures secure and flexible configuration management, enhancing the maintainability and security of the application.
 
+## API-Documentation
+
+For detailed API documentation, please refer to the [POSTMAN API Documentation](https://documenter.getpostman.com/view/25319657/2sAYQfEpM7).
+
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -126,35 +141,6 @@ The chosen technologies and architectural patterns provide a scalable and effici
 
 ### Installation
 
-<!-- 1. **Clone the repository**:
-   ```sh
-   git clone <repository-url>
-   cd <repository-directory>
-
-2. **Install dependencies for the frontend**:
-cd WeatherApp
-npm install
-
-3.Install dependencies for the backend:
-cd ../WeatherApp-backend
-npm install
-4.Create a .env file in the root directory and add the following:
-API_KEY=<your-openweathermap-api-key>
-BASE_URL=https://api.openweathermap.org/data/2.5
-GEO_URL=http://api.openweathermap.org/geo/1.0/reverse
-TILE_URL=https://tile.openweathermap.org/map
-API_URL=http://<your-backend-url>/api/auth
-
-Running the Application
-1. **Start the backend server**:
-cd WeatherApp-backend
-npm start
-
-2. Start the frontend application:
-cd ../WeatherApp
-expo start
-
-3.Open the Expo app on your mobile device and scan the QR code to run the application. -->
 
 ## Prerequisites
 Ensure you have the following installed:
@@ -168,8 +154,8 @@ Ensure you have the following installed:
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd backend
+git clone https://github.com/Pasindujay1/Weather_App.git
+cd WeatherApp-backend
 ```
 
 ### 2. Install dependencies
@@ -178,17 +164,18 @@ npm install
 ```
 
 ### 3. Configure environment variables
-Create a `.env` file in the `backend` directory and add the following:
+Create a `.env` file in the `WeatherApp-backend` directory and add the following:
 ```
-PORT=5000
-MONGO_URI=<your-mongodb-connection-string>
-JWT_SECRET=<your-jwt-secret>
-OPENWEATHER_API_KEY=<your-openweather-api-key>
+PORT=8000
+MONGODB_URL=mongodb+srv://pasindu:pasindu@cluster0.6elwr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=vdbvjdbvkdbvksvbkdsbvkhbsdkvbsdkhk
+
+
 ```
 
 ### 4. Start the server
 ```bash
-npm start
+node app.js 
 ```
 The server will run on `http://localhost:5000` by default.
 
@@ -198,7 +185,7 @@ The server will run on `http://localhost:5000` by default.
 
 ### 1. Navigate to the frontend folder
 ```bash
-cd frontend
+cd WeatherApp
 ```
 
 ### 2. Install dependencies
@@ -208,7 +195,7 @@ npm install
 
 ### 3. Start the Expo development server
 ```bash
-expo start
+npm run android
 ```
 
 Scan the QR code with your Expo Go app to view the application on your device.
