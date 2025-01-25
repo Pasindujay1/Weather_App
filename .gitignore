@@ -1,0 +1,40 @@
+=
+# dependencies
+WeatherApp/node_modules/
+WeatherApp-backend/node_modules/
+
+# Environment Variables
+WeatherApp/.env
+WeatherApp-backend/.env
+
+# Expo (Frontend)
+WeatherApp/.expo/
+WeatherApp/dist/
+WeatherApp/web-build/
+WeatherApp/expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro (Frontend)
+WeatherApp/.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
